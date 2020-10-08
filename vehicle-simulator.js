@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 const axios = require('axios')
 
 function runVehicle(index){
-    var lat = 1, long = 2;
+    let lat = 1, long = 2;
     setInterval(() => {
         axios.post('http://localhost:3001/'+index+'/location',
             {
